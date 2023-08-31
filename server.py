@@ -9,7 +9,7 @@ async def echo(websocket):
         await websocket.send("Hi Arun Welcome!!!!")
 
 async def main():
-    async with serve(echo, "localhost", 8765):
+    async with serve(echo, "localhost", 6000):
         await asyncio.Future()
 
 asyncio.run(main())
